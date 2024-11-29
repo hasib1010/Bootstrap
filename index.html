@@ -87,10 +87,11 @@
 
       body[data-theme='dark'] .sidebar {
         padding: 16px;
+        box-shadow: 0px 1px 2px 0px rgba(192, 192, 192, 0.4);
         width: fit-content;
         border-radius: 8px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        background: #131421;
+        background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(4.5px);
         width: 100%;
         display: flex;
@@ -101,8 +102,8 @@
         padding: 16px;
         width: fit-content;
         border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: var(--Container-corner-radius, 10px);
+         
+        border-radius: 8px;
         border: 1px solid #e9eaec;
         background: #fff;
         box-shadow: 0px 3px 6px 0px rgba(192, 192, 192, 0.4);
@@ -843,7 +844,7 @@
       .logo {
         width: 48px;
         height: 48px;
-        flex-shrink: 0; 
+        flex-shrink: 0;
         border-radius: 100%;
       }
     </style>
@@ -855,149 +856,149 @@
         <!-- Sidebar Column -->
 
         <div class="sidebar col-xl-2">
-          <div
-            class="" 
-          >
-          <div  style="
-          display: inline-flex;
-          justify-content: start;
-          width: 100%;
-          align-items: center;
-          gap: 10px;
-          padding-top: 16px;
-          padding-left: 12px;
-          padding-bottom: 16px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        ">
-
-<img class="logo" src="./logo.gif" alt="" />
-<h5 style="font-size: 24px; font-family: IM FELL French Canon SC">
-  CIFA
-</h5>
-</div>
-          
-
-          <ul style="padding-left: 12px; padding-right: 12px">
-            <li><i class="fas fa-th-large"></i> Dashboard</li>
-            <li><i class="fas fa-comments"></i> Interviews</li>
-            <li class="section-title">ORGANIZATIONS</li>
-            <li><i class="fas fa-briefcase"></i> Job Board</li>
-            <ul>
-              <li id="jobs" class="menu-item" aria-expanded="false">
-                <i class="fas fa-clipboard-list"></i>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: 100%;
-                  "
-                >
-                  <span>Jobs</span>
-                  <i class="fa-solid fa-chevron-down arrow"></i>
-                </div>
-              </li>
-              <div class="subMenu">
-                <li class="subMenu-item">
-                  <i class="fas fa-plus-square"></i> Create
-                </li>
-                <li class="ActiveSider">
-                  <svg
-                    style="margin-right: 15px"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      d="M3.33333 5H16.6667M3.33333 8.33333H16.6667M3.33333 11.6667H16.6667M3.33333 15H16.6667"
-                      fill="white"
-                      stroke="url(#paint0_radial_464_12775)"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <defs>
-                      <radialGradient
-                        id="paint0_radial_464_12775"
-                        cx="0"
-                        cy="0"
-                        r="1"
-                        gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(10 10) rotate(90.5899) scale(7.61833 10.1573)"
-                      >
-                        <stop stop-color="white" />
-                        <stop offset="1" stop-color="white" />
-                      </radialGradient>
-                    </defs>
-                  </svg>
-
-                  Listing
-                </li>
-              </div>
-            </ul>
-
-            <li class="section-title">SCALING TOOLS MANAGEMENT</li>
-            <li><i class="fas fa-question-circle"></i> Quiz Designer</li>
-            <li><i class="fas fa-video"></i> Interview Designer</li>
-            <li><i class="fas fa-star"></i> Traits</li>
-            <ul>
-              <li id="categories" class="menu-item" aria-expanded="false">
-                <i class="fas fa-clipboard-list"></i>
-                <div
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: 100%;
-                  "
-                >
-                  <span>Categories</span>
-                  <i class="fa-solid fa-chevron-down arrow2"></i>
-                </div>
-              </li>
-              <div class="subMenu2">
-                <li class="subMenu-item2">
-                  <i class="fas fa-plus-square"></i> Category 1
-                </li>
-                <li class="subMenu-item2">
-                  <i class="fas fa-plus-square"></i> Category 2
-                </li>
-              </div>
-            </ul>
-            <li class="section-title">USERS MANAGEMENT</li>
-            <li><i class="fas fa-users"></i> Team</li>
-            <li><i class="fas fa-user"></i> Candidates</li>
-            <li><i class="fas fa-video"></i> Videos Resume Hub</li>
-            <li><i class="fas fa-check-circle"></i> Shortlisted Candidates</li>
-            <li class="section-title">OTHERS</li>
-            <li><i class="fas fa-user-cog"></i> Memberships</li>
-
-            <li id="settings" class="menu-item" aria-expanded="false">
-              <i class="fas fa-cog"></i>
-              <div
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  width: 100%;
-                "
-              >
-                <span>Settings</span>
-                <i class="fa-solid fa-chevron-down arrow3"></i>
-              </div>
-            </li>
-
-            <div class="subMenu3">
-              <li class="subMenu-item3">
-                <i class="fas fa-user-cog"></i> Profile Settings
-              </li>
-              <li class="subMenu-item3">
-                <i class="fas fa-shield-alt"></i> Security
-              </li>
+          <div class="">
+            <div
+              style="
+                display: inline-flex;
+                justify-content: start;
+                width: 100%;
+                align-items: center;
+                gap: 10px;
+                padding-top: 16px;
+                padding-left: 12px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+              "
+            >
+              <img class="logo" src="./logo.gif" alt="" />
+              <h5 style="font-size: 24px; font-family: IM FELL French Canon SC">
+                CIFA
+              </h5>
             </div>
-          </ul>
-        </div>
+
+            <ul style="padding-left: 12px; padding-right: 12px">
+              <li><i class="fas fa-th-large"></i> Dashboard</li>
+              <li><i class="fas fa-comments"></i> Interviews</li>
+              <li class="section-title">ORGANIZATIONS</li>
+              <li><i class="fas fa-briefcase"></i> Job Board</li>
+              <ul>
+                <li id="jobs" class="menu-item" aria-expanded="false">
+                  <i class="fas fa-clipboard-list"></i>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      width: 100%;
+                    "
+                  >
+                    <span>Jobs</span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                  </div>
+                </li>
+                <div class="subMenu">
+                  <li class="subMenu-item">
+                    <i class="fas fa-plus-square"></i> Create
+                  </li>
+                  <li class="ActiveSider">
+                    <svg
+                      style="margin-right: 15px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M3.33333 5H16.6667M3.33333 8.33333H16.6667M3.33333 11.6667H16.6667M3.33333 15H16.6667"
+                        fill="white"
+                        stroke="url(#paint0_radial_464_12775)"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <radialGradient
+                          id="paint0_radial_464_12775"
+                          cx="0"
+                          cy="0"
+                          r="1"
+                          gradientUnits="userSpaceOnUse"
+                          gradientTransform="translate(10 10) rotate(90.5899) scale(7.61833 10.1573)"
+                        >
+                          <stop stop-color="white" />
+                          <stop offset="1" stop-color="white" />
+                        </radialGradient>
+                      </defs>
+                    </svg>
+
+                    Listing
+                  </li>
+                </div>
+              </ul>
+
+              <li class="section-title">SCALING TOOLS MANAGEMENT</li>
+              <li><i class="fas fa-question-circle"></i> Quiz Designer</li>
+              <li><i class="fas fa-video"></i> Interview Designer</li>
+              <li><i class="fas fa-star"></i> Traits</li>
+              <ul>
+                <li id="categories" class="menu-item" aria-expanded="false">
+                  <i class="fas fa-clipboard-list"></i>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      width: 100%;
+                    "
+                  >
+                    <span>Categories</span>
+                    <i class="fa-solid fa-chevron-down arrow2"></i>
+                  </div>
+                </li>
+                <div class="subMenu2">
+                  <li class="subMenu-item2">
+                    <i class="fas fa-plus-square"></i> Category 1
+                  </li>
+                  <li class="subMenu-item2">
+                    <i class="fas fa-plus-square"></i> Category 2
+                  </li>
+                </div>
+              </ul>
+              <li class="section-title">USERS MANAGEMENT</li>
+              <li><i class="fas fa-users"></i> Team</li>
+              <li><i class="fas fa-user"></i> Candidates</li>
+              <li><i class="fas fa-video"></i> Videos Resume Hub</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Shortlisted Candidates
+              </li>
+              <li class="section-title">OTHERS</li>
+              <li><i class="fas fa-user-cog"></i> Memberships</li>
+
+              <li id="settings" class="menu-item" aria-expanded="false">
+                <i class="fas fa-cog"></i>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                  "
+                >
+                  <span>Settings</span>
+                  <i class="fa-solid fa-chevron-down arrow3"></i>
+                </div>
+              </li>
+
+              <div class="subMenu3">
+                <li class="subMenu-item3">
+                  <i class="fas fa-user-cog"></i> Profile Settings
+                </li>
+                <li class="subMenu-item3">
+                  <i class="fas fa-shield-alt"></i> Security
+                </li>
+              </div>
+            </ul>
+          </div>
           <div>
             <div class="membershipCard">
               <div
@@ -1025,12 +1026,12 @@
               </div>
               <p class="expireDate">20/03/2025</p>
             </div>
-  
+
             <div
               class="d-flex justify-content-center align-items-center my-4 btnTheme"
             >
               <!-- Toggle Buttons Container -->
-  
+
               <!-- Light Button -->
               <button
                 style="border: none; outline: none"
@@ -1226,7 +1227,7 @@
           </div>
 
           <!-- Filter Bar -->
-          <div   class="filter-bar ">
+          <div class="filter-bar">
             <div
               class="selectx"
               style="
@@ -1392,7 +1393,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/03eb/8cc4/8b020e429efbae552386376f8a68aa6b?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UMGo-dEMJxKmsHRS~r8RTuG1RTDd55t-8NrTTO-VuyyFme1BDHnhKg3jhFNAs4CzddURs7D5ap37f9McLNNMHwYdm3Fy-WfS-LtUdUXCosrX1i14Ku~JDTkpGapNcqzU2op9cEXfP1bjHerBX83zXDicYbaPi8l1Myz5RD2DyiIw2FvDMPbwE3EY7gWnH6LQZZuhfAdBSa2toQqJ47aNw9SuktDBAYf-t-czgem2vxm3ZBMZNhS-v-YUy44druKYAEkmzApqSWBvHpeRGx6q6Rk7tnqA1FhXbm3GdIhYcOTP9UFeAmDwgOUaqYcPG6H2lq-uO7CY7ihAIVSZl3hB~Q__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/03eb/8cc4/8b020e429efbae552386376f8a68aa6b?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UMGo-dEMJxKmsHRS~r8RTuG1RTDd55t-8NrTTO-VuyyFme1BDHnhKg3jhFNAs4CzddURs7D5ap37f9McLNNMHwYdm3Fy-WfS-LtUdUXCosrX1i14Ku~JDTkpGapNcqzU2op9cEXfP1bjHerBX83zXDicYbaPi8l1Myz5RD2DyiIw2FvDMPbwE3EY7gWnH6LQZZuhfAdBSa2toQqJ47aNw9SuktDBAYf-t-czgem2vxm3ZBMZNhS-v-YUy44druKYAEkmzApqSWBvHpeRGx6q6Rk7tnqA1FhXbm3GdIhYcOTP9UFeAmDwgOUaqYcPG6H2lq-uO7CY7ihAIVSZl3hB~Q__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Grimes, Schiller and Considine</h5>
@@ -1447,7 +1452,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/cf0e/f54c/c1903a7bbcc660b5b01c2a1d45cab587?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P7VttPoyo5KfMKHytDCulfzG0JvsnDCa8~NTG7TeOCaM8aPyCLEi0B6jXqBCJN9OGDpfbEkbfIjF~4rAArTHafc279osVTDmz7KLB7PL52QcdtAS8Awgf3Zgd7oDe5uBhIF8NbonoJMq6HXk-eA59SfDbODG3FO0AA8SpwtIESiXkUPHQX9g0kecNpSNf5icAbhGMDEtzBVDTXCBbIIeOi0r-3yCBgh3bar--VqPRC77r6Cb4B3RHHsCurOIHuIybv6wOx9VY8~LIdYjBTSXF6-v~heA3ZzSAggBytxdzKPtT7c~M~eT9cYeyxc8wxRU1WLOVdF7twvC7Ww0neteQQ__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/cf0e/f54c/c1903a7bbcc660b5b01c2a1d45cab587?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=P7VttPoyo5KfMKHytDCulfzG0JvsnDCa8~NTG7TeOCaM8aPyCLEi0B6jXqBCJN9OGDpfbEkbfIjF~4rAArTHafc279osVTDmz7KLB7PL52QcdtAS8Awgf3Zgd7oDe5uBhIF8NbonoJMq6HXk-eA59SfDbODG3FO0AA8SpwtIESiXkUPHQX9g0kecNpSNf5icAbhGMDEtzBVDTXCBbIIeOi0r-3yCBgh3bar--VqPRC77r6Cb4B3RHHsCurOIHuIybv6wOx9VY8~LIdYjBTSXF6-v~heA3ZzSAggBytxdzKPtT7c~M~eT9cYeyxc8wxRU1WLOVdF7twvC7Ww0neteQQ__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1502,7 +1511,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/625e/8663/a36f0ad63a794de6a6de4c53839771ca?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g-pSWkP6PfgCcCX~04mS4ARR-QsT5qedg6AuApTv-P-jrsUsHWIHCHEV-B0govuvnvRZD0SFuIKQmtO1-AQW8GmEXG3Sl~QDSCX~5KhP0AmbRZENERdhR2e0YZ3LDpNsiZok8wWOnEi6yTb9Vhr~W8zCh2UEp4XuxHJ4z2G4Ys40g2Pbqx-ds4Xm62ZFASpH5zvNYcik79uYf-XTQT6YHCOk02qTwE5RCCtDpc9eT2crTQZf06-seh~3tZi8i1Zv~pNSEJCS5TeeWX9XwopkovLECDTxbzzBqIXhwYWFcMlfplvqQNHkB5NFTuzeXtaT-ome5IOy-5lct3GqJSY6eQ__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/625e/8663/a36f0ad63a794de6a6de4c53839771ca?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=g-pSWkP6PfgCcCX~04mS4ARR-QsT5qedg6AuApTv-P-jrsUsHWIHCHEV-B0govuvnvRZD0SFuIKQmtO1-AQW8GmEXG3Sl~QDSCX~5KhP0AmbRZENERdhR2e0YZ3LDpNsiZok8wWOnEi6yTb9Vhr~W8zCh2UEp4XuxHJ4z2G4Ys40g2Pbqx-ds4Xm62ZFASpH5zvNYcik79uYf-XTQT6YHCOk02qTwE5RCCtDpc9eT2crTQZf06-seh~3tZi8i1Zv~pNSEJCS5TeeWX9XwopkovLECDTxbzzBqIXhwYWFcMlfplvqQNHkB5NFTuzeXtaT-ome5IOy-5lct3GqJSY6eQ__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1557,7 +1570,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/40f2/0c9c/c47015c05f1ff9d08ab0143cec86c1f5?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LyVliwOgwdZmqa-FWh9Oi06U0xbMgqmmL51gXFW9HlPwdI4y0iOxCfssIDX~netvVYIWwCYRCEcH-anMUGzbyqgOf0FDTGUo6quq-T-uww85a6MDprvN~r6-HRkJ3Mbcm4ccxsEctMYE7oAlbNOeR2zDOjzS9nWioCULYOZLe27dn9LP2EzsBR8PzXWx4viLPOeE2MtZq5RZ98dr8fBK7UtO-YvK7c63vbvz2Y2eWP9cgBKYuF3s~QX0RK1DNI3iKE0YAEw2UzmDio6cw~tjFMREPQBNGin8vnf8NUqVdWY6besz~OHpLbwN-9-Uq74pkvAFasxCsw6~7skI46lSsQ__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/40f2/0c9c/c47015c05f1ff9d08ab0143cec86c1f5?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LyVliwOgwdZmqa-FWh9Oi06U0xbMgqmmL51gXFW9HlPwdI4y0iOxCfssIDX~netvVYIWwCYRCEcH-anMUGzbyqgOf0FDTGUo6quq-T-uww85a6MDprvN~r6-HRkJ3Mbcm4ccxsEctMYE7oAlbNOeR2zDOjzS9nWioCULYOZLe27dn9LP2EzsBR8PzXWx4viLPOeE2MtZq5RZ98dr8fBK7UtO-YvK7c63vbvz2Y2eWP9cgBKYuF3s~QX0RK1DNI3iKE0YAEw2UzmDio6cw~tjFMREPQBNGin8vnf8NUqVdWY6besz~OHpLbwN-9-Uq74pkvAFasxCsw6~7skI46lSsQ__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1612,7 +1629,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/8588/1772/8a849a0feb8dcd8f0facae42c6cc2d36?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AvqUrELbuObfCrR8Zn-02u-9xDbKwQuOs1J-7Cz55vTkcxewvXaZKr9c3nE7nD6zbwVqv73UWfcj1Ei~eGi5147L27yXjb7-T~IeCxjO2R4Hh42UlPpjZPI6G9squjtvELKfFez5BJwMUBOYPOtu61L2LsBt2cV~24z88pBa-DhPLeOap2fBzRGAUDjRkud4REk5OvSDxlrit9duyWi3rrenvV~FzK1AHdBNnrlH6efuPmvaw63VyWcyxiJ2Bn4mR5XG9-O6Zcz7Gz~W7BNkIct3jS2wyK~mxGfPL3WDXQ95K0bEvn2gPksK36X4RTFBeYW-Y1Cse94DyFy11mBxhg__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/8588/1772/8a849a0feb8dcd8f0facae42c6cc2d36?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AvqUrELbuObfCrR8Zn-02u-9xDbKwQuOs1J-7Cz55vTkcxewvXaZKr9c3nE7nD6zbwVqv73UWfcj1Ei~eGi5147L27yXjb7-T~IeCxjO2R4Hh42UlPpjZPI6G9squjtvELKfFez5BJwMUBOYPOtu61L2LsBt2cV~24z88pBa-DhPLeOap2fBzRGAUDjRkud4REk5OvSDxlrit9duyWi3rrenvV~FzK1AHdBNnrlH6efuPmvaw63VyWcyxiJ2Bn4mR5XG9-O6Zcz7Gz~W7BNkIct3jS2wyK~mxGfPL3WDXQ95K0bEvn2gPksK36X4RTFBeYW-Y1Cse94DyFy11mBxhg__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1667,7 +1688,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/54d9/91fa/15abf42aaedd79dee608d9219584c50e?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f9ySGrVkb-56VPKZcJdkt5t1oxZlVMzVODjF1ZJXkq~wY-Izw5JYAmSg31mzrdspRzmrMZ6VsCnE2UYMFlMp7-YRG3DGM94Fa~82H7uuwd3rH1uywC9ZODB1gFj-Yoko7YqFR37fIWaM9P7J6TWU1OS77ZzAOAUiTCxGT8GeWzaCJI2i2huL1tJYGUNRTK2x7Dz0~mrk53b0SMrdU2dxepbf0ZBukuE4DvL~LYVVVYltytf5KR~8h~D8tpSHT1q7jJ3laTayUjFo~F5p5LvO5YyCqMKfBzsiBQ-LUMGwc2bhH2duw~tqnhXrptKjsG0zvHZw7-dxK7vCE3Xu0tsFmA__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/54d9/91fa/15abf42aaedd79dee608d9219584c50e?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=f9ySGrVkb-56VPKZcJdkt5t1oxZlVMzVODjF1ZJXkq~wY-Izw5JYAmSg31mzrdspRzmrMZ6VsCnE2UYMFlMp7-YRG3DGM94Fa~82H7uuwd3rH1uywC9ZODB1gFj-Yoko7YqFR37fIWaM9P7J6TWU1OS77ZzAOAUiTCxGT8GeWzaCJI2i2huL1tJYGUNRTK2x7Dz0~mrk53b0SMrdU2dxepbf0ZBukuE4DvL~LYVVVYltytf5KR~8h~D8tpSHT1q7jJ3laTayUjFo~F5p5LvO5YyCqMKfBzsiBQ-LUMGwc2bhH2duw~tqnhXrptKjsG0zvHZw7-dxK7vCE3Xu0tsFmA__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1722,7 +1747,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/077e/e810/15aef58f8cf0cd3c4901496767d4a59f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ez1a~sFfCapKE06egD5H7R6jx~Zi5IB5kS3nHcrM3KvQbZ-re4L2VcKVGl~ofoqjwVn~uOoquX6GtpDSdgvOQlq-fyoZNKIfLS0vgUkhQ-TUjnqxEs2NT3xlMJIsDBYz9o~02W68LQCX27Z6Z2T4nNSURYnwhLwgW9ClVk4jQWHOwIa8L8qmfP~XY4IzvvKsStsEBZjx7pg9yepkTWasyA7yl2FRYJ3jvWKYfgMkSz5DRDGi7WA0r0vq21GTE3bUY2tpi6OcsoWbHrHaW4gWAaYgs08DWJBfS9DTpfZT6mrLE4PxDPHLVhCfgmI7DstucWxrxopskAvpbn8wZZsjCw__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/077e/e810/15aef58f8cf0cd3c4901496767d4a59f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ez1a~sFfCapKE06egD5H7R6jx~Zi5IB5kS3nHcrM3KvQbZ-re4L2VcKVGl~ofoqjwVn~uOoquX6GtpDSdgvOQlq-fyoZNKIfLS0vgUkhQ-TUjnqxEs2NT3xlMJIsDBYz9o~02W68LQCX27Z6Z2T4nNSURYnwhLwgW9ClVk4jQWHOwIa8L8qmfP~XY4IzvvKsStsEBZjx7pg9yepkTWasyA7yl2FRYJ3jvWKYfgMkSz5DRDGi7WA0r0vq21GTE3bUY2tpi6OcsoWbHrHaW4gWAaYgs08DWJBfS9DTpfZT6mrLE4PxDPHLVhCfgmI7DstucWxrxopskAvpbn8wZZsjCw__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1777,7 +1806,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/136c/fe50/5c9f739035d86908967e044b9c6b113f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Svsw7ppWTRmzZ8KQmkVZdjrrGSk8fcYiXXFmhLGpszY8UMCqxwaY0YxdsuN7v66HL1-dyPxn8NRQMivYEV9v8JkLjvvTXEB7AAz2cmde3-t9U3drBW3HOIiw4oWDo90VusX20kG5qqYeMhErBjks~5U8D02SDVOov87qaoiUR2lKoeJrwE-h6sJzyh1RrW9N3bZbLLxuzHsqBRW7qWBUmo1UwbDS4tESwEEbEY1nsOIZEdzLa~uSfnfglCBIrYLgPtvXDoOulzOiKPtUru1smYc50M2-KduIsPRqjE39yJmX75tDCyPd4O1XhkhGsx6tsOa44iZpiJ~fHHjzy7XSpw__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/136c/fe50/5c9f739035d86908967e044b9c6b113f?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Svsw7ppWTRmzZ8KQmkVZdjrrGSk8fcYiXXFmhLGpszY8UMCqxwaY0YxdsuN7v66HL1-dyPxn8NRQMivYEV9v8JkLjvvTXEB7AAz2cmde3-t9U3drBW3HOIiw4oWDo90VusX20kG5qqYeMhErBjks~5U8D02SDVOov87qaoiUR2lKoeJrwE-h6sJzyh1RrW9N3bZbLLxuzHsqBRW7qWBUmo1UwbDS4tESwEEbEY1nsOIZEdzLa~uSfnfglCBIrYLgPtvXDoOulzOiKPtUru1smYc50M2-KduIsPRqjE39yJmX75tDCyPd4O1XhkhGsx6tsOa44iZpiJ~fHHjzy7XSpw__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1832,7 +1865,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/45c2/431e/62a2677855e035b2e17e9f627e92c766?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W5jdEbJXZz3XkR-6xMIJ9RjFdp3gLMCMbQCO0NfSzBgXb83NzgbzB94ZQXBkLGHkgZLkEDDAubceAazqHrO1B-nsEPzV6mOVRkB5QyDkD06UW~zyDvpRYLUOdNK7O3Sdf4r4ueAj89i4LSo-v6jSkULEeLLud3~VGyEJKQCUkFqsmJsTbD18Pg8cdZq7piif0TDPQi-QF6PIamPS~7~26hKKFej-orxkQiNPgtuJyOcJOt0XZbJ2he7DFWVyPdopA2~D7vhdfepEFcbTx2Dt18vzsx9r~QQFTNomjrXoGdIPU6vo~nmw0UMkKrYU597rl1XG0gx4QNTvMFwmGIeyGQ__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/45c2/431e/62a2677855e035b2e17e9f627e92c766?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W5jdEbJXZz3XkR-6xMIJ9RjFdp3gLMCMbQCO0NfSzBgXb83NzgbzB94ZQXBkLGHkgZLkEDDAubceAazqHrO1B-nsEPzV6mOVRkB5QyDkD06UW~zyDvpRYLUOdNK7O3Sdf4r4ueAj89i4LSo-v6jSkULEeLLud3~VGyEJKQCUkFqsmJsTbD18Pg8cdZq7piif0TDPQi-QF6PIamPS~7~26hKKFej-orxkQiNPgtuJyOcJOt0XZbJ2he7DFWVyPdopA2~D7vhdfepEFcbTx2Dt18vzsx9r~QQFTNomjrXoGdIPU6vo~nmw0UMkKrYU597rl1XG0gx4QNTvMFwmGIeyGQ__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1887,7 +1924,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/0913/702e/d4770fd23debccfb1b2ea6af988b4e7e?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ft3h7uL-JnP0MnB-Bjm1ioTmhzqom7qXUHhTZBTjLq2ooHWsyaqlVXeOlpIJhGt5NwHOR0SmdKo9ELSeVpnQ~~RZR-ABF3z6j3UrcGQN28JnHDxUMG5R6J5IQ3I8BnPuhGkQrFpjwedWjRxB8PlJ5jm6ppgqfk0Ru4t~ivvsdJcKJsnopeCGxjWvzujtuMMU2I9e73QDU8H1nmB7aO-70Vw6BnKwH4MDEJbOkwcO5-p8y2Dn2rRa-GADTeeyc2Ons4uydEoP9DXMMyf-UOHIX20IyuUAt-i9tRSladeRksTh~DhucBdpixshCAxOYYqUi396lWyidenJ2DxMi5brYQ__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/0913/702e/d4770fd23debccfb1b2ea6af988b4e7e?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ft3h7uL-JnP0MnB-Bjm1ioTmhzqom7qXUHhTZBTjLq2ooHWsyaqlVXeOlpIJhGt5NwHOR0SmdKo9ELSeVpnQ~~RZR-ABF3z6j3UrcGQN28JnHDxUMG5R6J5IQ3I8BnPuhGkQrFpjwedWjRxB8PlJ5jm6ppgqfk0Ru4t~ivvsdJcKJsnopeCGxjWvzujtuMMU2I9e73QDU8H1nmB7aO-70Vw6BnKwH4MDEJbOkwcO5-p8y2Dn2rRa-GADTeeyc2Ons4uydEoP9DXMMyf-UOHIX20IyuUAt-i9tRSladeRksTh~DhucBdpixshCAxOYYqUi396lWyidenJ2DxMi5brYQ__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
@@ -1942,7 +1983,11 @@
               </div>
             </div>
             <div class="job-card position-relative">
-              <img src="https://s3-alpha-sig.figma.com/img/6fac/a216/b3e7cd9f4a72d23008ce9443219a3b15?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mM2ijqwEa-DONm2EoyOKIuTOowzFn6U~t4Oiw3iA0XTOT5c-QcwTQ-5fPkHDO~PZwgfw8zAl4r1cB4B7bqE-f5v6HuNbx0wq3Zrfy5cLooUGjRzbbgbE8I6TN6SIXqTalLBiZBN~DUIJiYFMw3VERX2nKm80u6hydKp44BIjatkCsJdBBgLlUq0I3KgjSNRqKUy3wGHpCHZaWpgQQAqvjKqnW~uqXP28jINEQwJ2d~sS9ysbTQSEvDPoq-mCXMJ3ULefiH2K0LDc~Bc-PCPPAjX6fMKOhEjD4eZjsOgszPa6YV6BKIVZbGxgm~Kkf8Nb2ATfEQvEkr3o~2O~65o~3A__" alt="" class="logo" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/6fac/a216/b3e7cd9f4a72d23008ce9443219a3b15?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mM2ijqwEa-DONm2EoyOKIuTOowzFn6U~t4Oiw3iA0XTOT5c-QcwTQ-5fPkHDO~PZwgfw8zAl4r1cB4B7bqE-f5v6HuNbx0wq3Zrfy5cLooUGjRzbbgbE8I6TN6SIXqTalLBiZBN~DUIJiYFMw3VERX2nKm80u6hydKp44BIjatkCsJdBBgLlUq0I3KgjSNRqKUy3wGHpCHZaWpgQQAqvjKqnW~uqXP28jINEQwJ2d~sS9ysbTQSEvDPoq-mCXMJ3ULefiH2K0LDc~Bc-PCPPAjX6fMKOhEjD4eZjsOgszPa6YV6BKIVZbGxgm~Kkf8Nb2ATfEQvEkr3o~2O~65o~3A__"
+                alt=""
+                class="logo"
+              />
 
               <div class="job-card-content">
                 <h5>Finance Controls - LRR Mapping</h5>
